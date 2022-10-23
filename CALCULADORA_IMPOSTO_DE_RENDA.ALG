@@ -1,13 +1,10 @@
 algoritmo "CalculadoraIR"
 
-
-
 var
 
    Nome: caractere
    v_imp1, v_imp2, v_imp3, v_imp4: Real
    salario, sal_liq1, sal_liq2, sal_liq3, sal_liq4 : Real
-
 
 inicio
    Escreval ("=====================================================")
@@ -30,50 +27,39 @@ inicio
    Sal_liq3 <- salario - v_imp3
    Sal_liq4 <- salario - v_imp4
    Se (salario <= 1903.98) entao
-      Escreval ("ParabÈns, ", nome, "! VocÍ est· isento(a) do pagamento do IR.")
+      Escreval ("Parab√©ns, ", nome, "! Voc√™ est√° isento(a) do pagamento do IR.")
       Escreval ()
    Senao
-      Se (salario >= 1903.99) e (salario <= 2826.65) ent„o
-         Escreval (nome, ", apÛs consulta, verifiquei os seguintes resultados: ")
+      Se (salario >= 1903.99) e (salario <= 2826.65) ent√£o
+         Escreval (nome, ", ap√≥s consulta, verifiquei os seguintes resultados: ")
          Escreval ("Aliquota a ser paga: 7,5%")
          Escreval ("Valor a ser pago: " , v_imp1 , " R$" )
-         Escreval ("Salario lÌquido (apÛs desontos): " , sal_liq1)
+         Escreval ("Salario l√≠quido (ap√≥s desontos): " , sal_liq1)
       Senao
          Se (salario >=  2826.66) e (salario <= 3751.05) entao
-            Escreval (nome, ", apÛs consulta, verifiquei os seguintes resultados:")
+            Escreval (nome, ", ap√≥s consulta, verifiquei os seguintes resultados:")
             Escreval ("Aliquota a ser paga: 15%")
             Escreval ("Valor a ser pago: " , v_imp2,  " R$"  )
-            Escreval ("Salario lÌquido (apÛs descontos): " , sal_liq2)
+            Escreval ("Salario l√≠quido (ap√≥s descontos): " , sal_liq2)
          Senao
             Se (salario >= 3751.06) e  (salario <= 4664.68) entao
-               Escreval (nome, ", apÛs consulta, verifiquei os seguintes resultados:")
+               Escreval (nome, ", ap√≥s consulta, verifiquei os seguintes resultados:")
                Escreval ("Aliquota a ser paga: 22.5%")
                Escreval ("Valor a ser pago: " , v_imp3,  " R$" )
-               Escreval ("Salario lÌquido (apÛs descontos): " , sal_liq3)
+               Escreval ("Salario l√≠quido (ap√≥s descontos): " , sal_liq3)
             Senao
                Se (salario >= 4664.49) entao
-                  Escreval (nome, ", apÛs consulta, verifiquei os seguntes resultados:")
+                  Escreval (nome, ", ap√≥s consulta, verifiquei os seguntes resultados:")
                   Escreval ("Aliquota a ser paga: 27.5%")
                   Escreval ("Valor a ser pago: " , v_imp4)
-                  Escreval ("Salario lÌquido (apÛs descontos): " , sal_liq4,  " R$" )
-
-
-
+                  Escreval ("Salario l√≠quido (ap√≥s descontos): " , sal_liq4,  " R$" )
                FimSe
-
             FimSe
-
          FimSe
-
       FimSe
-
    FimSe
-
-
-
    Escreval ("=====================================================")
-   Escreval ("         $$$ AGRADECEMOS A SUA PARTICIPA«√O $$$      ")
+   Escreval ("         $$$ AGRADECEMOS A SUA PARTICIPA√á√ÉO $$$      ")
    Escreval ("=====================================================")
-
 
 fimalgoritmo
